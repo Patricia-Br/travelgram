@@ -3,10 +3,20 @@ main{
   flex-wrap: wrap;
   gap: 24px;
   padding-block: 24px;
+
+  @media (width < 80em){
+    gap: 16px;
+    padding: 16px;
+    margin-inline: auto;
+  }
 }
 
 main img{
   width: 286px;
   height: 286px;
   object-fit: cover;
+
+  @media (width < 80em){
+    width: 100%;
+  }
 }

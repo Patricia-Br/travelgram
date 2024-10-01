@@ -4,6 +4,20 @@ footer{
   padding-block: 24px;
 
   font: 14px/150% var(--font-family);
+
+  @media (width < 80em){
+    display: grid;
+    
+    & span:nth-child(1){
+      margin-inline: auto;
+    }
+
+    & div{
+      display: flex;
+      gap: 16px;
+      margin-inline: auto;
+    }
+  }
 }
 
 footer span:nth-child(1){
